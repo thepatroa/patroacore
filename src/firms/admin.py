@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Firm, FirmMember
+
+admin.site.register(Firm)
+admin.site.register(FirmMember)
