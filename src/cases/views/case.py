@@ -5,7 +5,6 @@ from ..serializers.case import CaseSerializer
 
 class CaseViewSet(viewsets.ModelViewSet):
     serializer_class = CaseSerializer
-    permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
         return Case.objects.filter(
