@@ -20,7 +20,6 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt.token_blacklist",
     "src.cases",
     "src.cashflow",
-    "src.employees",
     "src.expenses",
     "src.firms",
     "src.integrations",
