@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     "src.integrations",
     "src.transactions",
     "src.users",
+    "drf_spectacular",
 ]
 
 MIDDLEWARE = [
@@ -45,6 +46,13 @@ REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": (
         "rest_framework.permissions.IsAuthenticated",
     ),
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Fince',
+    'DESCRIPTION': 'Documentação da Fince API',
+    'VERSION': '1.0.0',
 }
 
 AUTH_USER_MODEL = "users.User"

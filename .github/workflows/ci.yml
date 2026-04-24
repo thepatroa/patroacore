@@ -1,4 +1,4 @@
-name: CI Patroa
+name: CI Fince
 
 on:
   push:
